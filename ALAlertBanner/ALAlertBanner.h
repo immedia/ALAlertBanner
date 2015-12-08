@@ -25,27 +25,29 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
-typedef enum {
+typedef NS_ENUM(NSUInteger, ALAlertBannerStyle) {
     ALAlertBannerStyleSuccess = 0,
     ALAlertBannerStyleFailure,
     ALAlertBannerStyleNotify,
     ALAlertBannerStyleWarning,
-} ALAlertBannerStyle;
+};
 
-typedef enum {
+typedef NS_ENUM(NSUInteger, ALAlertBannerPosition) {
     ALAlertBannerPositionTop = 0,
     ALAlertBannerPositionBottom,
     ALAlertBannerPositionUnderNavBar,
-} ALAlertBannerPosition;
+};
 
-typedef enum {
+typedef NS_ENUM(NSUInteger, ALAlertBannerState) {
     ALAlertBannerStateShowing = 0,
     ALAlertBannerStateHiding,
     ALAlertBannerStateMovingForward,
     ALAlertBannerStateMovingBackward,
     ALAlertBannerStateVisible,
-    ALAlertBannerStateHidden
-} ALAlertBannerState;
+    ALAlertBannerStateHidden,
+};
+
+
 
 @interface ALAlertBanner : UIView
 
